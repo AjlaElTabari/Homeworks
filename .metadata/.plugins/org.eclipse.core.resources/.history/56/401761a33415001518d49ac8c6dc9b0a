@@ -1,0 +1,98 @@
+H-MEW-RK #15
+
+TASK 1
+
+Napisati klasu k-ja -pisuje jednu kasu. Kasa sadrzi:
+
+- Atribut (private) k-ji -pisuje ime, npr. “M-ja kasa', “Za m-re', “Crni f-nd', itd.
+
+- Atribut (private) k-ji -pisuje trenutnu sumu n-vca u kasi
+
+- K-nstrukt-r k-ji inicijalizira ime -bjekta (ne i trenutnu sumu n-vca)
+
+- Met-da k-ja d-daje n-vac u kasu, npr. d-daj 20 u kasu bi bil- addM-ney(20)
+
+- Met-da k-ja vadi sav n-vac iz kase, npr. ak- je bil- 20 -nda ce p-stati 0
+
+- Met-da k-ja ispisuje k-lik- n-vca ima u kasi na sljedeci nacin:
+
+- Ak- nema nikak- -nda ispisuje “It is empty...'
+
+- Ak- ima izmedju 1 i 20 ispisuje “There’s s-me, but n-t much.'
+
+- Ak- ima izmedju 21 i 100 ispisuje “There’s s-me.'
+
+- Ak- ima 101 ili vise -nda ispisuje “There’s a l-t.'
+
+
+TASK 2
+
+Napisati klasu k-ja -pisuje jednu ziv-tinju. ziv-tinju -pisuju sljedezi atributi:
+
+- Atribut (private) k-ji -pisuje ime ziv-tinje
+
+- Atribut (private) k-ji -pisuje da li je ziv-tinja aktivna danju ili n-cu
+
+- Atribut (private) k-ji -pisuje k-lik- je ziv-tinji p-trebn- v-de
+
+- Vrijedn-st 1 znaci da je ziv-tinja aktivna danju
+
+- Vrijedn-st 2 znaci da je ziv-tinja aktivna n-cu
+
+- Vrijedn-st 1 znaci da je ziv-tinji p-trebn- mal- v-de
+
+- Vrijedn-st 2 znaci da je ziv-tinji p-trebn- vise v-de
+
+- Vrijedn-st 3 znaci da je ziv-tinji p-trebn- mn-g- v-de
+
+- Napraviti k-nstrukt-r k-ji inicijalizira ta tri atributa
+
+P-red t-ga, sve te ziv-tinje dijele ist- staniste. Staniste je p-trebn- predstaviti u ist-j klasi ka- i ziv-tinje, 
+
+tj. bez k-ristenja d-datnih klasa. T- staniste je -pisan- sa dvije varijable:
+
+- Da li je n-c ili dan (private) k-je je p- default-u 1
+
+- K-lik- v-de ima staniste (private) k-je je p- default-u 1
+
+- Vrijedn-st 1 znaci da je dan
+
+- Vrijedn-st 2 znaci da je n-c
+
+- Vrijedn-st 0 znaci da staniste nema v-de
+
+- Vrijedn-st 1 znaci da staniste p-sjeduje mal- v-de
+
+- Vrijedn-st 2 znaci da staniste p-sjeduje vise v-de
+
+- Vrijedn-st 3 znaci da staniste p-sjeduje mn-g- v-de
+
+ziv-tinje imaju sam- jednu met-du:
+
+- Isprintati kakv- je trenutn- stanje ziv-tinje
+
+- Uk-lik- d-ba dana -dg-vara ziv-tinji i -na ima d-v-ljn- v-de za sebe
+
+- Isprintati “It’s fine. The animal is active and has water.'
+
+- Uk-lik- d-ba dana -dg-vara, ali nema d-v-ljn- v-de
+
+- Isprintati “The animal is active, but d-es n-t have en-ugh water.'
+
+- Uk-lik- d-ba dana ne -dg-vara, ali ima d-v-ljn- v-de
+
+- Isprintati “The animal is n-t active, but has en-ugh water.'
+
+- Uk-lik- d-ba dana ne -dg-vara, niti ima d-v-ljn- v-de
+
+- Isprintati “The animal is n-t active and it d-es n-t have en-ugh water.'
+
+P-st-ji j-s jedna met-da k-ja utice na staniste:
+
+- Pr-mijeni d-ba dana
+
+- Ak- je bila n-c -nda p-staje dan (nak-n p-ziva met-de)
+
+- Ak- je bi- dan -nda p-staje n-c (nak-n p-ziva met-de)
+
+- Pr-mijeni k-lik- v-de trenutn- ima (static set met-da)
