@@ -28,12 +28,12 @@ public class Painting {
 		// Wagons
 		Wagon[] wagons = { wagon1, wagon2 };
 
-		// Train
+			// Train
 		Train train = new Train(locomotive, wagons);
 		double paintNeededForArea = getPaintNeededPerMeter(
-				Math.pow(paintNeededPerMeter, 2), train.getArea());
+				Math.pow(paintNeededPerMeter, 2), train.getArea(), 1);
 		double paintNeededForLines = getPaintNeededPerMeter(
-				paintNeededPerMeter, train.getPerimeter());
+				paintNeededPerMeter, train.getPerimeter(), 0.5); // 0.5 is line thickness
 		System.out
 				.printf("Paint needed for draw the train lines is: %.2f kilograms. \nPaint needed for paint complete train is: %.2f kilograms.",
 						paintNeededForLines, paintNeededForArea);
@@ -41,8 +41,8 @@ public class Painting {
 	}
 
 	public static double getPaintNeededPerMeter(double paintPerMeter,
-			double amountPerMeter) {
-		return paintPerMeter * amountPerMeter;
+			double amountPerMeter, double lineThickness) {
+		return paintPerMeter * amountPerMeter * lineThickness;
 	}
 
 }
