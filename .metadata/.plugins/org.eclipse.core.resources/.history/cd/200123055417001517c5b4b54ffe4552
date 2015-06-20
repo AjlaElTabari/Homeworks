@@ -1,0 +1,14 @@
+package ba.bitcamp.homework_stringbuilder_task2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Author a = new Author("Mesa Selimovic", "mesa@tvrjava.ba", Author.MALE);
+		System.out.println(a);
+		
+		Book b = new Book("Tvrdjava", 15.60, a, 7);
+		System.out.println(b);
+	}
+
+}

@@ -1,0 +1,134 @@
+package ba.bitcamp.edvin.zadaca01;
+
+public class Book extends Author {
+	/**
+	 * Creating constants
+	 */
+	public static final int MAX_BOOK_CAPACITY = 3;
+	public static final int MIN_BOOK_CAPACITY = 0;
+
+	/**
+	 * Properties of book
+	 */
+	private String bookName;
+	private int price;
+	private int stock;
+
+	/**
+	 * Creating constructor with information of author from class Author
+	 * 
+	 * @param authorName
+	 * @param mail
+	 * @param isMale
+	 * @param bookName
+	 *            Name of book
+	 * @param price
+	 *            Book price
+	 * @param stock
+	 *            How many books are in stock
+	 */
+	public Book(String authorName, String mail, boolean isMale,
+			String bookName, int price, int stock) {
+		super(authorName, mail, isMale);
+		this.bookName = bookName;
+		this.price = price;
+		this.stock = stock;
+	}
+
+	/**
+	 * Returns book name
+	 * 
+	 * @return
+	 */
+	public String getBookName() {
+		return bookName;
+	}
+
+	/**
+	 * Gives user opportunity to set Book name
+	 * 
+	 * @param bookName
+	 */
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
+	}
+
+	/**
+	 * Returns book price
+	 * 
+	 * @return
+	 */
+	public int getPrice() {
+		return price;
+	}
+
+	/**
+	 * Gives user opportunity to set price of a book
+	 * 
+	 * @param price
+	 */
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	/**
+	 * Returns how many books are in stock (max 3)
+	 * 
+	 * @return
+	 */
+	public int getStock() {
+		return stock;
+	}
+
+	/**
+	 * Gives user opportunity to set how many books are in stock, but if he
+	 * enters more books than the capacity is, then capacity is set to maximum
+	 * 
+	 * @param stock
+	 */
+	public void setStock(int stock) {
+		if (stock < MAX_BOOK_CAPACITY) {
+			this.stock = stock;
+		} else
+			this.stock = MAX_BOOK_CAPACITY;
+	}
+	/**
+	 * Allows user to sell books
+	 * When book is sold, the capacity decreases
+	 * If user try to sell more books than capacity, nothing will happen
+	 * @param num
+	 * @return
+	 */
+
+	public int sellBook(int num) {
+		if (this.stock - num > MIN_BOOK_CAPACITY
+				|| this.stock - num == MIN_BOOK_CAPACITY) {
+			this.stock -= num;
+			return this.stock;
+		} else if (this.stock - num < MIN_BOOK_CAPACITY) {
+		}
+		return this.stock;
+	}
+	/**
+	 * Allows user to buy books
+	 * User can buy only up to 3 books, because that is capacity
+	 */
+
+	public int buyBook(int num) {
+		if (this.stock + num > MAX_BOOK_CAPACITY) {
+			return MAX_BOOK_CAPACITY;
+		}
+		return this.stock += num;
+	}
+	/**
+	 * Printing information about book
+	 */
+	public String toString() {
+		String s = super.toString() + "\n";
+		s += "Book name : " + bookName + "\n";
+		s += "Book price: " + price + "\n";
+		s += "Stock: " + stock + "\n";
+
+		return s;
+	}
+}

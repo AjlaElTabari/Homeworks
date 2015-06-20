@@ -1,0 +1,76 @@
+package ba.bitcamp.homework_stringbuilder_task2_3_4;
+
+public class BookStore {
+	private String name;
+	private Book[] books;
+	
+	/**
+	 * Constructor
+	 * @param name
+	 * @param books
+	 */
+	public BookStore(String name, Book[] books) {
+		super();
+		this.name = name;
+		this.books = books;
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @return the books
+	 */
+	public Book[] getBooks() {
+		return books;
+	}
+
+	/**
+	 * @param books the books to set
+	 */
+	public void setBooks(Book[] books) {
+		this.books = books;
+	}
+	
+	/**
+	 * Prints out information about bookstore
+	 */
+	public String toString() {
+		String s = "";
+		s += "Name: " + name + "\n";
+		for (int i = 0; i < books.length; i++) {
+			s += "Book: \n" + this.books[i].toString() + "\n";
+		}
+		return s;
+	}
+	
+	/**
+	 * Simulates procedure of selling books. 
+	 * Finds desired book in the book store and 
+	 * decreses its stock value by one, if it is possible
+	 * @param b Book
+	 */
+	public void sellBook(Book b) {
+		for (int i = 0; i < books.length; i++) {
+			if (b.equals(books[i])) {
+				if(books[i].getStock() > 0) {
+					books[i].setStock(books[i].getStock()-1);
+				} else {
+					System.out.println("There is no book on stock.");
+				}
+			}
+		}
+	}
+	
+}

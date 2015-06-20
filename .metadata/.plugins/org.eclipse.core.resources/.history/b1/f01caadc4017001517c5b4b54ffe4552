@@ -1,0 +1,16 @@
+package homework_stringbuilder;
+
+public class CampStringBuilder {
+	private char[] characters;
+
+	/**
+	 * Constructor
+	 * @param characters
+	 */
+	public CampStringBuilder(char[] characters) {
+		super();
+		this.characters = characters;
+	}
+	
+	
+}

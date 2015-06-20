@@ -1,0 +1,59 @@
+package ba.bitcamp.edvin.zadaca01;
+
+import java.util.Arrays;
+
+public class BookStore {
+
+	private String bookStoreName;
+	private Book[] books;
+
+	public BookStore() {
+	}
+
+	public String getBookStoreName() {
+		return bookStoreName;
+	}
+
+	public void setBookStoreName(String bookStoreName) {
+		this.bookStoreName = bookStoreName;
+	}
+
+	public Book[] getBooks() {
+		return books;
+	}
+
+	public void setBooks(Book[] books) {
+		this.books = books;
+	}
+
+	public int sellBook(Book[] books, int num) {
+		for (int i = 0; i < books.length; i++) {
+
+			if (books[i].getStock() - num > 0 || books[i].getStock() - num == 0) {
+				books[i].setStock(books[i].getStock() - num);
+				return books[i].getStock();
+			} else if (books[i].getStock() - num < 0) {
+			}
+			return books[i].getStock();
+		}
+		return 0;
+	}
+
+	public String getBooksByAuthor(String nameOfAuthor) {
+		String s = " ";
+		for (int i = 0; i < books.length; i++) {
+			if (books[i].getName().equals(nameOfAuthor)) {
+				s += books[i].getBookName() + "\n";
+			}
+		}
+		return s;
+	}
+
+	public String toString() {
+		String s = " ";
+		s += "Name of Book Store: " + bookStoreName + "\n";
+		s += Arrays.toString(books);
+		return s;
+	}
+
+}

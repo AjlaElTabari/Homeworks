@@ -1,0 +1,55 @@
+package ba.bitcamp.homework_stringbuilder_task2;
+
+public class Library {
+	private String name;
+	private Book[] books;
+	
+	/**
+	 * Constructor
+	 * @param name
+	 * @param books
+	 */
+	public Library(String name, Book[] books) {
+		super();
+		this.name = name;
+		this.books = books;
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @return the books
+	 */
+	public Book[] getBooks() {
+		return books;
+	}
+
+	/**
+	 * @param books the books to set
+	 */
+	public void setBooks(Book[] books) {
+		this.books = books;
+	}
+	
+	public String toString() {
+		String s = "";
+		s += "Name: " + name + "\n";
+		for (int i = 0; i < books.length; i++) {
+			s += "Book: \n" + this.books[i].toString() + "\n";
+		}
+		return s;
+	}
+	
+}

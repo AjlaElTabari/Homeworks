@@ -1,0 +1,24 @@
+package ba.bitcamp.homework_stringbuilder.task6;
+
+public class Dog extends Pet {
+	private String breed;
+
+	/**
+	 * @param name
+	 * @param age
+	 * @param species
+	 * @param breed
+	 */
+	public Dog(String name, int age, int species, String breed) {
+		super(name, age, species);
+		this.breed = breed;
+	}
+	
+	public String toString() {
+		s += "Breed: " + breed + "\n";
+		String s = super.toString();
+		s += "Breed: " + breed + "\n";
+		s += "av av";
+		return s;
+	}
+}

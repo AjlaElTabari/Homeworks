@@ -1,0 +1,15 @@
+package homework_stringbuilder;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		char[] characters = {'a', 'j', 'l', 'a'};
+		CampStringBuilder csb = new CampStringBuilder(characters);
+		String str = " el tabari";
+		
+		csb.append(str);
+
+	}
+
+}
