@@ -1,0 +1,28 @@
+package ba.bitcamp.homework_weekend5.task1;
+
+public class Character extends StoryElement {
+	private boolean sex;
+	private boolean isAlive;
+	private boolean isCapable;
+	/**
+	 * @param name
+	 * @param sex
+	 * @param isAlive
+	 * @param isCapable
+	 */
+	public Character(String name, boolean sex, boolean isAlive,
+			boolean isCapable) {
+		super(name);
+		this.sex = sex;
+		this.isAlive = isAlive;
+		this.isCapable = isCapable;
+	}
+	
+	public void killCharacter() {
+		if(!isAlive) {
+			isAlive = false;
+		} else {
+			System.out.println("Character is already dead.");
+		}
+	}
+}

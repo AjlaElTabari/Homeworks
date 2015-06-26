@@ -1,0 +1,39 @@
+package homework_oop;
+
+/**
+ * Represents a computer network
+ * Described with network name and array of computers
+ * @author ajla
+ *
+ */
+public abstract class Network {
+	private String name;
+	private Computer[] computers;
+	
+	/**
+	 * Constructor
+	 * Demands all arguments to be set during creation of object
+	 * @param name
+	 * @param computers
+	 */
+	public Network(String name, Computer[] computers) {
+		super();
+		this.name = name;
+		this.computers = computers;
+	}
+
+	/**
+	 * @param name
+	 */
+	public Network(String name) {
+		super();
+		this.name = name;
+		this.computers = new Computer[0];
+	}
+	
+	public abstract void addComputer(Computer c);
+	
+	public abstract void removeComputer(Computer c);
+	
+	 
+}

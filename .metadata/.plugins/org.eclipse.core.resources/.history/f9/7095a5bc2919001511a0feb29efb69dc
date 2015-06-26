@@ -1,0 +1,16 @@
+package ba.bitcamp.homework_weekend5.task2;
+
+import ba.bitcamp.homework_weekend5.task1.StoryElement;
+
+public class Goal extends StoryElement {
+	public static final int EASY = 0;
+	public static final int HARD = 1;
+	public static final int IMPOSSIBLE = 2;
+	
+	private int difficulty;
+	private int event;
+	private Character character;
+	
+	
+	
+}

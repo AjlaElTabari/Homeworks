@@ -1,0 +1,32 @@
+package homework_oop;
+
+public class Client extends Computer implements Connectable {
+	private Computer connectedToComputer;
+	private Network connectedToNetwork;
+		
+	/**
+	 * @param name
+	 * @param macAddress
+	 */
+	public Client(String name, MacAddress macAddress) {
+		super(name, macAddress);
+	}
+	
+	@Override
+	public void connect(Computer c) {
+		if (this.connectedToComputer.equals(c)) {
+			throw new IllegalArgumentException("Link already exits.");
+		}
+		
+	}
+	@Override
+	public void connect(Network n) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void disconnect() {
+		// TODO Auto-generated method stub
+		
+	}
+}

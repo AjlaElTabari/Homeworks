@@ -1,0 +1,48 @@
+package homework_oop;
+
+/**
+ * Represents tool box for computers array manipulation
+ * Contains methods for increasing and decreasing computers array
+ * @author ajla
+ *
+ */
+public class ArrayManipulation {
+	
+	/**
+	 * Simulates increasing array by one, by making
+	 * a new array, and then copying values from old array to the new one
+	 * New member of the array is null
+	 * @param array
+	 * @return
+	 */
+	public static Computer[] extendArray(Computer[] array) {
+
+		Computer[] added = new Computer[array.length + 1];
+
+		// Checks if the array is empty
+		if (array[0] == null) {
+			added[1] = null;
+		} else {
+			System.arraycopy(array, 0, added, 0, array.length);
+			added[added.length - 1] = null;
+		}
+		return added;
+	}
+
+	/**
+	 * Simulates decreasing array by one, by deleting 
+	 * the array member on given index.
+	 * @param array
+	 * @return
+	 */
+	public static Computer[] shrinkArray(Computer[] array, int index) {
+		Computer[] removed = new Computer[array.length - 1];
+
+		for (int i = 0; i < removed.length; i++) {
+			if (array[i] != array[index]) {
+				removed[i] = array[i];
+			}
+		}
+		return removed;
+	}
+}

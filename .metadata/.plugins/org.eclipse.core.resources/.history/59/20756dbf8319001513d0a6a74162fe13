@@ -1,0 +1,17 @@
+package ba.bitcamp.homework_weekend5.task1;
+
+public abstract class StoryElement {
+	private String name;
+
+	/**
+	 * @param name
+	 */
+	public StoryElement(String name) {
+		super();
+		this.name = name;
+	}
+	
+	public StoryElement() {
+		this("STElement");
+	}
+}

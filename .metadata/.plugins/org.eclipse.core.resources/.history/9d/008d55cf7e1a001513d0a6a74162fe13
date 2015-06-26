@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package homework_oop;
+
+/**
+ * @author ajla
+ *
+ */
+public interface Connectable {
+
+}

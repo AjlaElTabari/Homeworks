@@ -1,0 +1,21 @@
+package homework_oop;
+
+public class Client implements Connectable {
+	private Computer connectedToComputer;
+	private Network connectedToNetwork;
+	@Override
+	public void connect(Computer c) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void connect(Network n) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void disconnect() {
+		// TODO Auto-generated method stub
+		
+	}
+}

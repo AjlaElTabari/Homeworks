@@ -1,0 +1,5 @@
+package homework_oop1_task2;
+
+public abstract class Network {
+	
+}
