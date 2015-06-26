@@ -1,5 +1,0 @@
-package homework_oop;
-
-public class StarNetwork extends Network implements Functionable {
-
-}

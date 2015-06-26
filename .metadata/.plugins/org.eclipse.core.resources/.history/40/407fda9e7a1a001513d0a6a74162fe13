@@ -1,9 +1,0 @@
-package homework_oop1_task2;
-
-import homework_oop1_task1.Computer;
-
-public abstract class Network {
-	private String name;
-	private Computer[] computers;
-	
-}
