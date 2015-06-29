@@ -58,7 +58,6 @@ public class Main extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 	}
-
 	/**
 	 * Creating a class named Action that implements ActionListener interface.
 	 * It allows us to create buttons behviour. 

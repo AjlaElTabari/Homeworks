@@ -105,7 +105,7 @@ public class Main extends JFrame {
 			return generateName();
 		}
 	}
-	
+
 	/**
 	 * Inner class that represents kind of surnames database.
 	 * Contains an array of surnames.
@@ -126,7 +126,6 @@ public class Main extends JFrame {
 			int index = (int)(Math.random() * SURNAMES_NUMBER);
 			return surnames[index];
 		}
-		
 		/**
 		 * Prints out picked surname
 		 */
@@ -134,7 +133,6 @@ public class Main extends JFrame {
 			return generateSurname();
 		}
 	}
-
 	// Creates new instance of our GUI app
 	public static void main(String[] args) {
 		new Main();

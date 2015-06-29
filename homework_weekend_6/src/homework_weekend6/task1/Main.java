@@ -45,7 +45,6 @@ public class Main extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 	}
-
 	// Creates new instance of our GUI app
 	public static void main(String[] args) {
 		new Main();

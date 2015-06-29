@@ -15,7 +15,6 @@ public class Main {
 			System.out.println();
 		}
 	}
-	
 	/**
 	 * Helper method that restricts indexes of rows and columns to zeros
 	 * Also restricts value to start from zero
