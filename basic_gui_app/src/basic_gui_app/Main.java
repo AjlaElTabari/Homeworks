@@ -38,7 +38,6 @@ public class Main extends JFrame{
 		/*JLabel text = new JLabel("Hello world!");
 		text.setText("Evo promijenjen  je tekst.");
 		add(text); */
-		
 		setVisible(true);
 		setTitle("Prozor");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
